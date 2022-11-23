@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>demo</title>
+	<link rel="icon" href="assets/logos/title_ico.png" type="image/x-icon"/>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/atlantis.min.css">
+	<link rel="stylesheet" href="assets/css/demo.css">
+	<link rel="stylesheet" href=assets/css/style.css">
+	<script src="assets\tinymce\js\tinymce\tinymce.min.js"></script>
+    <script>
+      tinymce.init({
+        selector: '#mytextarea'
+      });
+    </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head data-background-color="dark">
+<div class="wrapper">
+    <div class="main-header">
+        <!-- Logo Header -->
+        <div class="logo-header" data-background-color="dark2">
+            
+            <a href="" class="logo">
+                <img src="assets/logos/logo2.png" alt="navbar brand" class="navbar-brand">
+            </a>
+            <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+            <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- End Logo Header -->
+    
+        <!-- Navbar Header -->
+        <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+            
+            <div class="container-fluid">
+                <!-- <div class="collapse" id="search-nav">
+                    <form action="" method="POST" class="navbar-left navbar-form nav-search mr-md-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button type="submit" class="btn btn-search pr-1">
+                                    <i class="fa fa-search search-icon"></i>
+                                </button>
+                            </div>
+                            <input type="search" value="search" class="form-control" name="search" placeholder="Search images...">
+                        </div>
+                    </form>
+                </div> -->
+                <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                    <li class="nav-item toggle-nav-search hidden-caret">
+                        <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+    
+                    <!-- <li class="nav-item dropdown hidden-caret">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+                            <div class="avatar-sm">
+                                <img src="assets/logos/logo.png" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user animated fadeIn">
+                            <div class="dropdown-user-scroll scrollbar-outer">
+                            <div class="avatar-sm ml-3">
+                                <img src="assets/logos/logo.png" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                                <li class="user-settings">
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">My Profile</a>
+                                </li>
+                                <li class="user-settings">
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+    </div>
+    
+    <!-- Sidebar -->
+    <div class="sidebar sidebar-style-2" data-background-color="dark2">
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+                
+                <ul class="nav nav-primary">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fa fa-dashboard"></i> 
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="visitors_list.html" class="nav-link">
+                            <i class="fa fa-users"></i> 
+                            <p>Visitors</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="prisoner.html" class="nav-link">
+                            <i class="fa fa-list"></i> 
+                            <p>Prisoner Records</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="staff_list.html" class="nav-link">
+                            <i class="fa fa-user-o"></i> 
+                            <p>Staff Records</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fa fa-sign-in"></i> 
+                            <p>Login</p>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Sidebar -->      
+        <div class="main-panel">
+			<div class="content">
+                <div class="page-inner">
+					<!-- Card -->
+					<h4 class="page-title">Staff</h4>
+                    <div class="row mb-2">
+						<div class="col-6">
+							<a href="add_staff.html" class="btn btn-primary">Add New Staff Member</a>
+						</div>
+						<div class="col-6"></div>
+					</div>
+                    <table class="table bg-white" id = "staff-table">
+                        <thead class="bg-dark">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Phone Number</th>
+                                <th>Position</th>
+                            </tr>
+                        </thead>
+                    </table>
+				</div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Prison Management System
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright ml-auto">
+                        <!-- Version 1.2.0 -->
+                    </div>				
+                </div>
+            </footer> 
+        </div>
+    </div>
+
+
+      <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Update Staff Record</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-3">
+                    Id
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <input id = "staff-id" type="number" class="form-control" placeholder="enter Id">
+                    </div>
+                </div>
+                <div class="col-3">
+                    Name
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <input id = "staff-name" type="text" class="form-control" placeholder="enter Full Name">
+                    </div>
+                </div>
+                <div class="col-3">
+                    Address
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <input id = "staff-address" type="text" name="" class="form-control"  placeholder="enter Address">
+                    </div>
+                </div>
+                <div class="col-3">
+                    Phone Number
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <input id = "staff-phone-number" type="number" name="" class="form-control" id="" placeholder="enter phone number"/>
+                    </div>
+                </div>
+                <div class="col-3">
+                    Current Position
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <input id = "staff-position" type="text" name="" class="form-control" id="" placeholder="Current Position" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="updateStaff()">Update</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    function updateStaff(){
+
+        const id = document.getElementById("staff-id").value
+        const name = document.getElementById("staff-name").value
+        const address = document.getElementById("staff-address").value
+        const phone_number = document.getElementById("staff-phone-number").value
+        const position = document.getElementById("staff-position").value
+
+        const body = {
+            "id":id,
+            "name":name,
+            "address":address,
+            "phone_number":phone_number,
+            "position":position,
+        }
+        if (!validate(body)){
+            return
+        }
+        const url = "http://localhost:3000/api/staff/" + id;
+
+        fetch(url,{ method: 'PUT',body: JSON.stringify(body),headers: {
+                        'Content-Type': 'application/json'}  
+                    })
+        .then((res)=>{
+            location.reload()
+        })
+
+    }
+    function validate(body){
+        if (body.id.length == 0 || body.name.length == 0 || body.address.length == 0){
+            alert("Fields can not be empty")
+            return false
+        }
+        if (body.phone_number.length == 0 || body.position.length == 0){
+            alert("Fields can not be empty")
+            return false
+        }
+        return true
+    }
+    function getAllStaffMembers(){
+        var staffList = "";
+        const url = "http://localhost:3000/api/staffs"
+        fetch(url)
+        .then((res)=>{
+            return res.json();
+        })
+        .then((data)=>{
+            data.sort((a,b)=>b.id-a.id)
+            const sec = document.getElementById("staff-table")
+            data.forEach(staff => {
+                staffList = `
+                                <tr>
+                                <td>${staff.id}</td>
+                                <td>${staff.name}</td>
+                                <td>${staff.address}</td>
+                                <td>${staff.phone_number}</td>
+                                <td>${staff.position}</td>
+                                <td>
+                                    <button value=${staff.id} class="btn btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit"></i></button>
+                                    <button onclick = "deleteStaffById(${staff.id})" class="btn btn-sm"><i class="fa fa-trash"></i></button>
+                                </td>
+                                </tr>
+                                `
+                sec.insertAdjacentHTML('afterbegin',staffList);
+            });
+        })
+    }
+    getAllStaffMembers()
+
+    function deleteStaffById(id){
+        console.log("inside delete function",id)
+        const url = "http://localhost:3000/api/staff/" + id;
+
+        fetch(url,{ method: 'DELETE' })
+        .then((res)=>{
+            location.reload()
+        })
+    }
+  </script>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="assets/js/rpy.min.js"></script>
+	<script>
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+    </script>
+
+	<script>
+
+	function getImage(el){
+		document.getElementById('school-profile').src = window.URL.createObjectURL(el.files[0])
+		str = $("#customFile").val();
+		$('#titleImage').val(str.split(/[\\/]/).pop());
+	}
+
+	$(function () {
+		// this will get the full URL at the address bar
+		var url = window.location.href;
+		// passes on every "a" tag
+		$(".nav .nav-link").each(function () {
+			// checks if its the same on the address bar
+			if (url == (this.href)) {
+				$(this).closest("li").addClass("active");
+				//for making parent of submenu active
+				$(this).closest("li").parent().parent().addClass("active");
+			}
+		});
+    });
+	</script>
+</body>
+</html>

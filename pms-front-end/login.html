@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/custome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="card" id="ResumeForm">
+        <small></small>
+        <!-- <form method="POST"> -->
+            <div class="login-img text-center text-muted">
+                <!-- <img src="assets/logos/logo.png" alt=""> -->
+            </div>
+            <div class="form-group">
+                <input id = "username" type="text" name="username" class="form-control" placeholder="Username">
+                <small></small>
+            </div>
+            <div class="form-group">
+                <input id = "password" type="password" name="password" class="form-control" placeholder="Password">
+                <small></small>
+            </div>
+            <center>
+                <button onclick="login()" class="btn text-" style="background-color: #D0D3D4;">LOGIN</button>   
+            </center>
+        <!-- </form> -->
+    </div>
+
+    <script>
+
+        function login(){
+            const username = document.getElementById("username").value
+            const password = document.getElementById("password").value
+            if (username.length ==0 || password.length == 0){
+                alert("Empty credentials")
+                return
+            }
+            if (username == "admin" && password == "admin"){
+                window.location.href = "index.html"
+                return
+            }
+            alert("Invalid Credentails")
+        }
+
+    </script>
+    
+</body>
+</html>

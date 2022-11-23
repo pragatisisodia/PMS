@@ -1,0 +1,104 @@
+:root{
+  --bg-primary:#cce781;
+  --bg-secondary:#cce781;
+  --bg-white:#E9EDF0;
+  --bg-dark-a : #588524;
+  --bg-gray:#D0D3D4;
+}
+
+.bg-main{background-color: var(--bg-primary) !important;}
+.rp-warning{
+  background-color: var(--bg-warning);
+  color: white;
+} 
+
+.text-second{color: var(--bg-second);}
+
+*{
+  font-family: 'Georama', sans-serif;
+}
+.rp-dark{
+  background-color: var(--bg-secondary);
+  color: white;
+}
+.rp-light{
+  background-color: var(--bg-primary);
+  color: white;
+}
+    .text-warning{color: var(--bg-secondary)}
+    .text-primary{color: var(--bg-secondary)}
+
+
+.login-img{
+  padding-bottom: 21px;
+}
+html, body {
+  height: 100%;
+}
+html {
+  display: table;
+  margin : auto;
+}
+body {
+  display       : table-cell;
+  vertical-align: middle;
+}
+h5{
+  color      : white;
+  font-size: 18px !important;
+}
+#ResumeForm{
+  box-shadow: 0px 0px 5px 0px var(--bg-gray);
+  color: white;
+  border-radius: 3px;
+  width: 400px;
+  margin: auto;
+  padding: 25px;
+  background-color: var(--bg-dark-a);
+}
+#ResumeForm small{
+  color: var(--bg-primary) !important;
+}
+label{
+  color: var(--bg-primary);
+}
+@media only screen and (max-width:480px){
+body{
+  padding: 15px;
+}
+#ResumeForm{
+  /* background-color: var(--bg-second); */
+  box-shadow      : 0px 0px 5px 0px var(--bg-main);
+  color           : white;
+  border-radius   : 19px;
+  right           : 0vh;
+  width           : 100% !important;
+  margin          : auto;
+}
+}
+
+/* input[type="text"]{
+} */
+input[type="text"]:focus{
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+input[type="text"],input[type="email"],input[type="date"],input[type="number"],input[type="search"],input[type="password"],.textarea,#selector2,.selector2{
+  height: 52px;
+  color        : var(--bg-primary);
+  border: 1px solid var(--bg-primary);
+  background-color: transparent;
+  border-radius: 5px;
+}
+input[type="text"]:focus,.textarea:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="number"]:focus,#selector2:focus,.selector2:focus{
+  border    : 1px solid var(--bg-primary);
+  color     : var(--bg-primary); 
+  box-shadow: none;
+}
+
+.btn {
+  padding: 10px;
+  width: 120px;
+}
